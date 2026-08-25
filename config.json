@@ -7,7 +7,7 @@
   "adr_length": 20,
   "min_market_cap": 1000000000,
   "near_high_threshold_pct": 10.0,
-  "history_weeks": 9,
+  "history_weeks": 104,
   "chunk_size": 180,
   "chunk_pause_seconds": 1.0
 }
