@@ -1,0 +1,65 @@
+[
+ {
+  "week_ending": "2026-06-26",
+  "universe_bull": 251,
+  "screened_bull": 152,
+  "stocks_covered": 2684,
+  "bull_pct": 9.35
+ },
+ {
+  "week_ending": "2026-07-03",
+  "universe_bull": 493,
+  "screened_bull": 159,
+  "stocks_covered": 2688,
+  "bull_pct": 18.34
+ },
+ {
+  "week_ending": "2026-07-10",
+  "universe_bull": 403,
+  "screened_bull": 59,
+  "stocks_covered": 2690,
+  "bull_pct": 14.98
+ },
+ {
+  "week_ending": "2026-07-17",
+  "universe_bull": 258,
+  "screened_bull": 109,
+  "stocks_covered": 2692,
+  "bull_pct": 9.58
+ },
+ {
+  "week_ending": "2026-07-24",
+  "universe_bull": 202,
+  "screened_bull": 34,
+  "stocks_covered": 2691,
+  "bull_pct": 7.51
+ },
+ {
+  "week_ending": "2026-07-31",
+  "universe_bull": 110,
+  "screened_bull": 33,
+  "stocks_covered": 2696,
+  "bull_pct": 4.08
+ },
+ {
+  "week_ending": "2026-08-07",
+  "universe_bull": 407,
+  "screened_bull": 199,
+  "stocks_covered": 2698,
+  "bull_pct": 15.09
+ },
+ {
+  "week_ending": "2026-08-14",
+  "universe_bull": 543,
+  "screened_bull": 146,
+  "stocks_covered": 2698,
+  "bull_pct": 20.13
+ },
+ {
+  "week_ending": "2026-08-21",
+  "universe_bull": 233,
+  "screened_bull": 95,
+  "stocks_covered": 2698,
+  "bull_pct": 8.64
+ }
+]
