@@ -1,38 +1,703 @@
 [
  {
+  "week_ending": "2024-08-30",
+  "universe_bull": 915,
+  "screened_bull": 63,
+  "stocks_covered": 2490,
+  "bull_pct": 36.75
+ },
+ {
+  "week_ending": "2024-09-06",
+  "universe_bull": 184,
+  "screened_bull": 15,
+  "stocks_covered": 2490,
+  "bull_pct": 7.39
+ },
+ {
+  "week_ending": "2024-09-13",
+  "universe_bull": 93,
+  "screened_bull": 23,
+  "stocks_covered": 2493,
+  "bull_pct": 3.73
+ },
+ {
+  "week_ending": "2024-09-20",
+  "universe_bull": 320,
+  "screened_bull": 95,
+  "stocks_covered": 2493,
+  "bull_pct": 12.84
+ },
+ {
+  "week_ending": "2024-09-27",
+  "universe_bull": 735,
+  "screened_bull": 151,
+  "stocks_covered": 2497,
+  "bull_pct": 29.44
+ },
+ {
+  "week_ending": "2024-10-04",
+  "universe_bull": 225,
+  "screened_bull": 65,
+  "stocks_covered": 2499,
+  "bull_pct": 9.0
+ },
+ {
+  "week_ending": "2024-10-11",
+  "universe_bull": 151,
+  "screened_bull": 27,
+  "stocks_covered": 2499,
+  "bull_pct": 6.04
+ },
+ {
+  "week_ending": "2024-10-18",
+  "universe_bull": 373,
+  "screened_bull": 116,
+  "stocks_covered": 2499,
+  "bull_pct": 14.93
+ },
+ {
+  "week_ending": "2024-10-25",
+  "universe_bull": 347,
+  "screened_bull": 35,
+  "stocks_covered": 2503,
+  "bull_pct": 13.86
+ },
+ {
+  "week_ending": "2024-11-01",
+  "universe_bull": 88,
+  "screened_bull": 25,
+  "stocks_covered": 2504,
+  "bull_pct": 3.51
+ },
+ {
+  "week_ending": "2024-11-08",
+  "universe_bull": 196,
+  "screened_bull": 139,
+  "stocks_covered": 2504,
+  "bull_pct": 7.83
+ },
+ {
+  "week_ending": "2024-11-15",
+  "universe_bull": 563,
+  "screened_bull": 58,
+  "stocks_covered": 2505,
+  "bull_pct": 22.48
+ },
+ {
+  "week_ending": "2024-11-22",
+  "universe_bull": 176,
+  "screened_bull": 103,
+  "stocks_covered": 2506,
+  "bull_pct": 7.02
+ },
+ {
+  "week_ending": "2024-11-29",
+  "universe_bull": 342,
+  "screened_bull": 67,
+  "stocks_covered": 2507,
+  "bull_pct": 13.64
+ },
+ {
+  "week_ending": "2024-12-06",
+  "universe_bull": 316,
+  "screened_bull": 71,
+  "stocks_covered": 2508,
+  "bull_pct": 12.6
+ },
+ {
+  "week_ending": "2024-12-13",
+  "universe_bull": 141,
+  "screened_bull": 40,
+  "stocks_covered": 2509,
+  "bull_pct": 5.62
+ },
+ {
+  "week_ending": "2024-12-20",
+  "universe_bull": 46,
+  "screened_bull": 16,
+  "stocks_covered": 2509,
+  "bull_pct": 1.83
+ },
+ {
+  "week_ending": "2024-12-27",
+  "universe_bull": 54,
+  "screened_bull": 15,
+  "stocks_covered": 2509,
+  "bull_pct": 2.15
+ },
+ {
+  "week_ending": "2025-01-03",
+  "universe_bull": 53,
+  "screened_bull": 16,
+  "stocks_covered": 2510,
+  "bull_pct": 2.11
+ },
+ {
+  "week_ending": "2025-01-10",
+  "universe_bull": 159,
+  "screened_bull": 28,
+  "stocks_covered": 2510,
+  "bull_pct": 6.33
+ },
+ {
+  "week_ending": "2025-01-17",
+  "universe_bull": 159,
+  "screened_bull": 60,
+  "stocks_covered": 2511,
+  "bull_pct": 6.33
+ },
+ {
+  "week_ending": "2025-01-24",
+  "universe_bull": 440,
+  "screened_bull": 81,
+  "stocks_covered": 2513,
+  "bull_pct": 17.51
+ },
+ {
+  "week_ending": "2025-01-31",
+  "universe_bull": 400,
+  "screened_bull": 60,
+  "stocks_covered": 2515,
+  "bull_pct": 15.9
+ },
+ {
+  "week_ending": "2025-02-07",
+  "universe_bull": 153,
+  "screened_bull": 39,
+  "stocks_covered": 2518,
+  "bull_pct": 6.08
+ },
+ {
+  "week_ending": "2025-02-14",
+  "universe_bull": 157,
+  "screened_bull": 56,
+  "stocks_covered": 2520,
+  "bull_pct": 6.23
+ },
+ {
+  "week_ending": "2025-02-21",
+  "universe_bull": 242,
+  "screened_bull": 35,
+  "stocks_covered": 2522,
+  "bull_pct": 9.6
+ },
+ {
+  "week_ending": "2025-02-28",
+  "universe_bull": 124,
+  "screened_bull": 22,
+  "stocks_covered": 2523,
+  "bull_pct": 4.91
+ },
+ {
+  "week_ending": "2025-03-07",
+  "universe_bull": 112,
+  "screened_bull": 24,
+  "stocks_covered": 2524,
+  "bull_pct": 4.44
+ },
+ {
+  "week_ending": "2025-03-14",
+  "universe_bull": 52,
+  "screened_bull": 9,
+  "stocks_covered": 2524,
+  "bull_pct": 2.06
+ },
+ {
+  "week_ending": "2025-03-21",
+  "universe_bull": 103,
+  "screened_bull": 22,
+  "stocks_covered": 2525,
+  "bull_pct": 4.08
+ },
+ {
+  "week_ending": "2025-03-28",
+  "universe_bull": 283,
+  "screened_bull": 20,
+  "stocks_covered": 2527,
+  "bull_pct": 11.2
+ },
+ {
+  "week_ending": "2025-04-04",
+  "universe_bull": 28,
+  "screened_bull": 5,
+  "stocks_covered": 2529,
+  "bull_pct": 1.11
+ },
+ {
+  "week_ending": "2025-04-11",
+  "universe_bull": 3,
+  "screened_bull": 1,
+  "stocks_covered": 2529,
+  "bull_pct": 0.12
+ },
+ {
+  "week_ending": "2025-04-18",
+  "universe_bull": 22,
+  "screened_bull": 7,
+  "stocks_covered": 2530,
+  "bull_pct": 0.87
+ },
+ {
+  "week_ending": "2025-04-25",
+  "universe_bull": 195,
+  "screened_bull": 58,
+  "stocks_covered": 2531,
+  "bull_pct": 7.7
+ },
+ {
+  "week_ending": "2025-05-02",
+  "universe_bull": 458,
+  "screened_bull": 112,
+  "stocks_covered": 2531,
+  "bull_pct": 18.1
+ },
+ {
+  "week_ending": "2025-05-09",
+  "universe_bull": 585,
+  "screened_bull": 126,
+  "stocks_covered": 2532,
+  "bull_pct": 23.1
+ },
+ {
+  "week_ending": "2025-05-16",
+  "universe_bull": 969,
+  "screened_bull": 541,
+  "stocks_covered": 2535,
+  "bull_pct": 38.22
+ },
+ {
+  "week_ending": "2025-05-23",
+  "universe_bull": 344,
+  "screened_bull": 47,
+  "stocks_covered": 2536,
+  "bull_pct": 13.56
+ },
+ {
+  "week_ending": "2025-05-30",
+  "universe_bull": 176,
+  "screened_bull": 37,
+  "stocks_covered": 2537,
+  "bull_pct": 6.94
+ },
+ {
+  "week_ending": "2025-06-06",
+  "universe_bull": 193,
+  "screened_bull": 83,
+  "stocks_covered": 2543,
+  "bull_pct": 7.59
+ },
+ {
+  "week_ending": "2025-06-13",
+  "universe_bull": 376,
+  "screened_bull": 83,
+  "stocks_covered": 2548,
+  "bull_pct": 14.76
+ },
+ {
+  "week_ending": "2025-06-20",
+  "universe_bull": 295,
+  "screened_bull": 72,
+  "stocks_covered": 2550,
+  "bull_pct": 11.57
+ },
+ {
+  "week_ending": "2025-06-27",
+  "universe_bull": 119,
+  "screened_bull": 45,
+  "stocks_covered": 2554,
+  "bull_pct": 4.66
+ },
+ {
+  "week_ending": "2025-07-04",
+  "universe_bull": 539,
+  "screened_bull": 281,
+  "stocks_covered": 2554,
+  "bull_pct": 21.1
+ },
+ {
+  "week_ending": "2025-07-11",
+  "universe_bull": 642,
+  "screened_bull": 83,
+  "stocks_covered": 2556,
+  "bull_pct": 25.12
+ },
+ {
+  "week_ending": "2025-07-18",
+  "universe_bull": 228,
+  "screened_bull": 68,
+  "stocks_covered": 2558,
+  "bull_pct": 8.91
+ },
+ {
+  "week_ending": "2025-07-25",
+  "universe_bull": 229,
+  "screened_bull": 56,
+  "stocks_covered": 2561,
+  "bull_pct": 8.94
+ },
+ {
+  "week_ending": "2025-08-01",
+  "universe_bull": 149,
+  "screened_bull": 28,
+  "stocks_covered": 2564,
+  "bull_pct": 5.81
+ },
+ {
+  "week_ending": "2025-08-08",
+  "universe_bull": 157,
+  "screened_bull": 44,
+  "stocks_covered": 2566,
+  "bull_pct": 6.12
+ },
+ {
+  "week_ending": "2025-08-15",
+  "universe_bull": 349,
+  "screened_bull": 113,
+  "stocks_covered": 2569,
+  "bull_pct": 13.59
+ },
+ {
+  "week_ending": "2025-08-22",
+  "universe_bull": 486,
+  "screened_bull": 219,
+  "stocks_covered": 2569,
+  "bull_pct": 18.92
+ },
+ {
+  "week_ending": "2025-08-29",
+  "universe_bull": 545,
+  "screened_bull": 68,
+  "stocks_covered": 2569,
+  "bull_pct": 21.21
+ },
+ {
+  "week_ending": "2025-09-05",
+  "universe_bull": 203,
+  "screened_bull": 66,
+  "stocks_covered": 2572,
+  "bull_pct": 7.89
+ },
+ {
+  "week_ending": "2025-09-12",
+  "universe_bull": 227,
+  "screened_bull": 74,
+  "stocks_covered": 2578,
+  "bull_pct": 8.81
+ },
+ {
+  "week_ending": "2025-09-19",
+  "universe_bull": 368,
+  "screened_bull": 134,
+  "stocks_covered": 2582,
+  "bull_pct": 14.25
+ },
+ {
+  "week_ending": "2025-09-26",
+  "universe_bull": 223,
+  "screened_bull": 76,
+  "stocks_covered": 2582,
+  "bull_pct": 8.64
+ },
+ {
+  "week_ending": "2025-10-03",
+  "universe_bull": 225,
+  "screened_bull": 78,
+  "stocks_covered": 2585,
+  "bull_pct": 8.7
+ },
+ {
+  "week_ending": "2025-10-10",
+  "universe_bull": 282,
+  "screened_bull": 62,
+  "stocks_covered": 2587,
+  "bull_pct": 10.9
+ },
+ {
+  "week_ending": "2025-10-17",
+  "universe_bull": 126,
+  "screened_bull": 55,
+  "stocks_covered": 2587,
+  "bull_pct": 4.87
+ },
+ {
+  "week_ending": "2025-10-24",
+  "universe_bull": 169,
+  "screened_bull": 56,
+  "stocks_covered": 2588,
+  "bull_pct": 6.53
+ },
+ {
+  "week_ending": "2025-10-31",
+  "universe_bull": 300,
+  "screened_bull": 97,
+  "stocks_covered": 2590,
+  "bull_pct": 11.58
+ },
+ {
+  "week_ending": "2025-11-07",
+  "universe_bull": 152,
+  "screened_bull": 38,
+  "stocks_covered": 2599,
+  "bull_pct": 5.85
+ },
+ {
+  "week_ending": "2025-11-14",
+  "universe_bull": 206,
+  "screened_bull": 62,
+  "stocks_covered": 2599,
+  "bull_pct": 7.93
+ },
+ {
+  "week_ending": "2025-11-21",
+  "universe_bull": 168,
+  "screened_bull": 40,
+  "stocks_covered": 2600,
+  "bull_pct": 6.46
+ },
+ {
+  "week_ending": "2025-11-28",
+  "universe_bull": 164,
+  "screened_bull": 72,
+  "stocks_covered": 2600,
+  "bull_pct": 6.31
+ },
+ {
+  "week_ending": "2025-12-05",
+  "universe_bull": 605,
+  "screened_bull": 173,
+  "stocks_covered": 2601,
+  "bull_pct": 23.26
+ },
+ {
+  "week_ending": "2025-12-12",
+  "universe_bull": 535,
+  "screened_bull": 156,
+  "stocks_covered": 2604,
+  "bull_pct": 20.55
+ },
+ {
+  "week_ending": "2025-12-19",
+  "universe_bull": 337,
+  "screened_bull": 42,
+  "stocks_covered": 2608,
+  "bull_pct": 12.92
+ },
+ {
+  "week_ending": "2025-12-26",
+  "universe_bull": 271,
+  "screened_bull": 45,
+  "stocks_covered": 2608,
+  "bull_pct": 10.39
+ },
+ {
+  "week_ending": "2026-01-02",
+  "universe_bull": 98,
+  "screened_bull": 21,
+  "stocks_covered": 2608,
+  "bull_pct": 3.76
+ },
+ {
+  "week_ending": "2026-01-09",
+  "universe_bull": 131,
+  "screened_bull": 77,
+  "stocks_covered": 2610,
+  "bull_pct": 5.02
+ },
+ {
+  "week_ending": "2026-01-16",
+  "universe_bull": 724,
+  "screened_bull": 268,
+  "stocks_covered": 2610,
+  "bull_pct": 27.74
+ },
+ {
+  "week_ending": "2026-01-23",
+  "universe_bull": 417,
+  "screened_bull": 105,
+  "stocks_covered": 2611,
+  "bull_pct": 15.97
+ },
+ {
+  "week_ending": "2026-01-30",
+  "universe_bull": 211,
+  "screened_bull": 44,
+  "stocks_covered": 2617,
+  "bull_pct": 8.06
+ },
+ {
+  "week_ending": "2026-02-06",
+  "universe_bull": 196,
+  "screened_bull": 103,
+  "stocks_covered": 2622,
+  "bull_pct": 7.48
+ },
+ {
+  "week_ending": "2026-02-13",
+  "universe_bull": 507,
+  "screened_bull": 122,
+  "stocks_covered": 2624,
+  "bull_pct": 19.32
+ },
+ {
+  "week_ending": "2026-02-20",
+  "universe_bull": 373,
+  "screened_bull": 80,
+  "stocks_covered": 2626,
+  "bull_pct": 14.2
+ },
+ {
+  "week_ending": "2026-02-27",
+  "universe_bull": 141,
+  "screened_bull": 47,
+  "stocks_covered": 2628,
+  "bull_pct": 5.37
+ },
+ {
+  "week_ending": "2026-03-06",
+  "universe_bull": 156,
+  "screened_bull": 27,
+  "stocks_covered": 2631,
+  "bull_pct": 5.93
+ },
+ {
+  "week_ending": "2026-03-13",
+  "universe_bull": 105,
+  "screened_bull": 33,
+  "stocks_covered": 2635,
+  "bull_pct": 3.98
+ },
+ {
+  "week_ending": "2026-03-20",
+  "universe_bull": 57,
+  "screened_bull": 24,
+  "stocks_covered": 2637,
+  "bull_pct": 2.16
+ },
+ {
+  "week_ending": "2026-03-27",
+  "universe_bull": 86,
+  "screened_bull": 42,
+  "stocks_covered": 2639,
+  "bull_pct": 3.26
+ },
+ {
+  "week_ending": "2026-04-03",
+  "universe_bull": 130,
+  "screened_bull": 46,
+  "stocks_covered": 2640,
+  "bull_pct": 4.92
+ },
+ {
+  "week_ending": "2026-04-10",
+  "universe_bull": 337,
+  "screened_bull": 144,
+  "stocks_covered": 2641,
+  "bull_pct": 12.76
+ },
+ {
+  "week_ending": "2026-04-17",
+  "universe_bull": 907,
+  "screened_bull": 388,
+  "stocks_covered": 2646,
+  "bull_pct": 34.28
+ },
+ {
+  "week_ending": "2026-04-24",
+  "universe_bull": 610,
+  "screened_bull": 153,
+  "stocks_covered": 2649,
+  "bull_pct": 23.03
+ },
+ {
+  "week_ending": "2026-05-01",
+  "universe_bull": 239,
+  "screened_bull": 93,
+  "stocks_covered": 2654,
+  "bull_pct": 9.01
+ },
+ {
+  "week_ending": "2026-05-08",
+  "universe_bull": 205,
+  "screened_bull": 87,
+  "stocks_covered": 2656,
+  "bull_pct": 7.72
+ },
+ {
+  "week_ending": "2026-05-15",
+  "universe_bull": 281,
+  "screened_bull": 75,
+  "stocks_covered": 2661,
+  "bull_pct": 10.56
+ },
+ {
+  "week_ending": "2026-05-22",
+  "universe_bull": 116,
+  "screened_bull": 46,
+  "stocks_covered": 2663,
+  "bull_pct": 4.36
+ },
+ {
+  "week_ending": "2026-05-29",
+  "universe_bull": 232,
+  "screened_bull": 96,
+  "stocks_covered": 2665,
+  "bull_pct": 8.71
+ },
+ {
+  "week_ending": "2026-06-05",
+  "universe_bull": 315,
+  "screened_bull": 66,
+  "stocks_covered": 2672,
+  "bull_pct": 11.79
+ },
+ {
+  "week_ending": "2026-06-12",
+  "universe_bull": 113,
+  "screened_bull": 53,
+  "stocks_covered": 2677,
+  "bull_pct": 4.22
+ },
+ {
+  "week_ending": "2026-06-19",
+  "universe_bull": 385,
+  "screened_bull": 91,
+  "stocks_covered": 2680,
+  "bull_pct": 14.37
+ },
+ {
   "week_ending": "2026-06-26",
-  "universe_bull": 251,
+  "universe_bull": 252,
   "screened_bull": 152,
   "stocks_covered": 2684,
-  "bull_pct": 9.35
+  "bull_pct": 9.39
  },
  {
   "week_ending": "2026-07-03",
-  "universe_bull": 493,
-  "screened_bull": 159,
+  "universe_bull": 492,
+  "screened_bull": 160,
   "stocks_covered": 2688,
-  "bull_pct": 18.34
+  "bull_pct": 18.3
  },
  {
   "week_ending": "2026-07-10",
-  "universe_bull": 403,
-  "screened_bull": 59,
+  "universe_bull": 406,
+  "screened_bull": 61,
   "stocks_covered": 2690,
-  "bull_pct": 14.98
+  "bull_pct": 15.09
  },
  {
   "week_ending": "2026-07-17",
   "universe_bull": 258,
-  "screened_bull": 109,
+  "screened_bull": 110,
   "stocks_covered": 2692,
   "bull_pct": 9.58
  },
  {
   "week_ending": "2026-07-24",
-  "universe_bull": 202,
+  "universe_bull": 203,
   "screened_bull": 34,
-  "stocks_covered": 2691,
-  "bull_pct": 7.51
+  "stocks_covered": 2692,
+  "bull_pct": 7.54
  },
  {
   "week_ending": "2026-07-31",
@@ -43,23 +708,23 @@
  },
  {
   "week_ending": "2026-08-07",
-  "universe_bull": 407,
+  "universe_bull": 406,
   "screened_bull": 199,
   "stocks_covered": 2698,
-  "bull_pct": 15.09
+  "bull_pct": 15.05
  },
  {
   "week_ending": "2026-08-14",
-  "universe_bull": 543,
-  "screened_bull": 146,
+  "universe_bull": 538,
+  "screened_bull": 145,
   "stocks_covered": 2698,
-  "bull_pct": 20.13
+  "bull_pct": 19.94
  },
  {
   "week_ending": "2026-08-21",
-  "universe_bull": 233,
-  "screened_bull": 95,
+  "universe_bull": 232,
+  "screened_bull": 94,
   "stocks_covered": 2698,
-  "bull_pct": 8.64
+  "bull_pct": 8.6
  }
 ]

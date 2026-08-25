@@ -3,26 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#10171C">
 <title>Micro Gap Scan — NASDAQ + NYSE</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#E8ECEF;
-    --panel:#FDFEFE;
-    --ink:#14232B;
-    --ink-soft:#4A5C67;
-    --ink-faint:#8397A3;
-    --rule:#C3CDD4;
-    --rule-soft:#DCE3E7;
-    --bull:#16794C;
-    --bull-wash:#DCEDE4;
-    --bear:#B03A31;
-    --bear-wash:#F4E0DE;
-    --plot:#2B4E8C;
-    --amber:#B07A0E;
-    --gap-void:#F0C86B;
+    --paper:#10171C;
+    --panel:#171F26;
+    --panel-2:#1D272F;
+    --ink:#E4ECF1;
+    --ink-soft:#9FB2BF;
+    --ink-faint:#6B808E;
+    --rule:#2C3A45;
+    --rule-soft:#232E37;
+    --bull:#3FB984;
+    --bull-wash:#17372B;
+    --bear:#E4695C;
+    --bear-wash:#3A211F;
+    --plot:#6FA8E8;
+    --amber:#E0A83C;
+    --gap-void:#C8912E;
+    --grid:rgba(120,160,185,.055);
+    --row-hover:#1E2A33;
   }
 
   *{box-sizing:border-box;}
@@ -30,8 +35,8 @@
   body{
     background:var(--paper);
     background-image:
-      linear-gradient(to right, rgba(120,145,160,.10) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(120,145,160,.10) 1px, transparent 1px);
+      linear-gradient(to right, var(--grid) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
     background-size:22px 22px;
     color:var(--ink);
     font-family:'IBM Plex Mono',ui-monospace,monospace;
@@ -89,6 +94,8 @@
   .chart-svg{width:100%;height:auto;display:block;}
   .legend{display:flex;gap:18px;flex-wrap:wrap;font-size:11px;color:var(--ink-soft);}
   .legend i{display:inline-block;width:11px;height:11px;margin-right:6px;vertical-align:-1px;}
+  .rangebar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px;}
+  .rangebar .chk{cursor:default;}
 
   /* ---- controls ---- */
   .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px;}
@@ -98,11 +105,13 @@
     background:transparent;color:var(--ink-soft);border-right:1px solid var(--rule-soft);
   }
   .seg button:last-child{border-right:0;}
-  .seg button[aria-pressed="true"]{background:var(--ink);color:var(--panel);}
+  .seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper);font-weight:600;}
   input[type=search],select{
     font-family:inherit;font-size:11.5px;padding:7px 10px;
-    border:1px solid var(--rule);background:var(--panel);color:var(--ink);
+    border:1px solid var(--rule);background:var(--panel-2);color:var(--ink);
   }
+  input[type=search]::placeholder{color:var(--ink-faint);}
+  input[type=checkbox]{accent-color:var(--plot);}
   input[type=search]{min-width:190px;}
   .chk{display:flex;align-items:center;gap:7px;font-size:11.5px;color:var(--ink-soft);cursor:pointer;}
   .spacer{flex:1;}
@@ -110,14 +119,14 @@
     font-family:inherit;font-size:11.5px;padding:7px 13px;cursor:pointer;
     border:1px solid var(--rule);background:var(--panel);color:var(--ink);
   }
-  .btn:hover{background:var(--paper);}
+  .btn:hover{background:var(--panel-2);border-color:var(--ink-faint);}
   :focus-visible{outline:2px solid var(--plot);outline-offset:1px;}
 
   /* ---- table ---- */
   .tablewrap{overflow-x:auto;border:1px solid var(--rule);background:var(--panel);}
   table{border-collapse:collapse;width:100%;font-size:12px;}
   thead th{
-    position:sticky;top:0;background:var(--panel);z-index:2;
+    position:sticky;top:0;background:var(--panel-2);z-index:2;
     text-align:right;padding:11px 10px;white-space:nowrap;cursor:pointer;
     font-weight:600;font-size:10px;letter-spacing:.09em;text-transform:uppercase;
     color:var(--ink-soft);border-bottom:1.5px solid var(--ink);user-select:none;
@@ -130,7 +139,7 @@
     border-bottom:1px solid var(--rule-soft);
   }
   tbody td.l{text-align:left;}
-  tbody tr:hover{background:#F2F6F8;}
+  tbody tr:hover{background:var(--row-hover);}
   .tick{font-weight:600;letter-spacing:.02em;}
   .name{color:var(--ink-soft);max-width:230px;overflow:hidden;text-overflow:ellipsis;display:block;}
   .ind{color:var(--ink-soft);}
@@ -148,7 +157,7 @@
   .glyph{display:block;}
 
   footer{margin-top:26px;font-size:11px;color:var(--ink-faint);max-width:80ch;}
-  footer code{background:var(--panel);padding:1px 5px;border:1px solid var(--rule-soft);}
+  footer code{background:var(--panel-2);padding:1px 5px;border:1px solid var(--rule);color:var(--ink-soft);}
 
   @media (max-width:640px){
     body{padding:22px 12px 60px;}
@@ -175,6 +184,18 @@
         <span><i style="background:var(--bull)"></i>Whole universe</span>
         <span><i style="background:var(--plot)"></i>Passed the screen</span>
       </div>
+    </div>
+    <div class="rangebar">
+      <div class="seg" id="rangeseg">
+        <button data-weeks="9"   aria-pressed="true">9w</button>
+        <button data-weeks="13"  aria-pressed="false">13w</button>
+        <button data-weeks="26"  aria-pressed="false">26w</button>
+        <button data-weeks="52"  aria-pressed="false">1y</button>
+        <button data-weeks="0"   aria-pressed="false">All</button>
+      </div>
+      <label class="chk" for="endweek">Ending</label>
+      <select id="endweek" title="Scroll the window back through history"></select>
+      <button class="btn" id="latest" title="Jump back to the most recent week">Latest</button>
     </div>
     <div id="trend"></div>
     <p class="note" id="trendnote"></p>
@@ -234,7 +255,8 @@ const COLUMNS = [
   {key:'sub_industry', label:'Sub-industry', align:'l', type:'text'},
 ];
 
-const state = {rows:[], gap:'all', industry:'all', q:'', nearOnly:false,
+const state = {rows:[], history:[], weeks:9, endIdx:0,
+               gap:'all', industry:'all', q:'', nearOnly:false,
                sortKey:'weekly_gain_pct', sortDir:-1};
 
 const money = n => n>=1e12 ? '$'+(n/1e12).toFixed(2)+'T'
@@ -292,23 +314,40 @@ function gapGlyph(candles, kind){
 }
 
 /* ---------- trend chart ---------- */
-function drawTrend(history){
+/* state.weeks: how many weeks wide the window is (0 = all history)
+   state.endIdx: index of the newest week shown, so the window can slide back  */
+function trendWindow(){
+  const h = state.history;
+  if(!h.length) return [];
+  const end = Math.min(state.endIdx, h.length-1);
+  const n = state.weeks > 0 ? state.weeks : h.length;
+  return h.slice(Math.max(0, end-n+1), end+1);
+}
+
+function drawTrend(){
   const host = $('trend');
   host.innerHTML = '';
-  if(!history.length){ host.innerHTML='<p class="note">No history yet — run the scan once.</p>'; return; }
+  const data = trendWindow();
+  if(!data.length){ host.innerHTML='<p class="note">No history yet — run the scan once.</p>'; return; }
 
-  const W=1000, H=250, L=44, R=16, T=14, B=42;
+  const W=1000, H=250, L=48, R=16, T=16, B=42;
   const iw = W-L-R, ih = H-T-B;
-  const max = Math.max(...history.map(d=>d.universe_bull), 1);
-  const step = iw/history.length;
-  const bw = Math.min(46, step*0.56);
+  const n = data.length;
+  const max = Math.max(...data.map(d=>d.universe_bull), 1);
+  const step = iw/n;
+  const bw = Math.max(1.5, Math.min(46, step*0.62));
   const y = v => T + ih - (v/max)*ih;
+
+  // With a long window the per-bar text collides, so thin it out.
+  const showValues = n <= 16;
+  const labelEvery = Math.ceil(n/13);
 
   const svg = document.createElementNS(SVGNS,'svg');
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
   svg.setAttribute('class','chart-svg');
   svg.setAttribute('role','img');
-  svg.setAttribute('aria-label','Bull micro gaps counted each week ending');
+  svg.setAttribute('aria-label',
+    `Bull micro gaps per week, ${data[0].week_ending} to ${data[n-1].week_ending}`);
 
   const add=(tag,attrs,text)=>{
     const el=document.createElementNS(SVGNS,tag);
@@ -316,8 +355,9 @@ function drawTrend(history){
     if(text!==undefined) el.textContent=text;
     svg.appendChild(el); return el;
   };
+  const tip=(el,text)=>el.appendChild(
+    Object.assign(document.createElementNS(SVGNS,'title'),{textContent:text}));
 
-  // gridlines + y labels
   for(let i=0;i<=4;i++){
     const v = max*i/4, yy = y(v);
     add('line',{x1:L,x2:W-R,y1:yy,y2:yy,stroke:'var(--rule-soft)','stroke-width':1});
@@ -325,41 +365,58 @@ function drawTrend(history){
                 'font-family':"'IBM Plex Mono',monospace"}, Math.round(v));
   }
 
-  history.forEach((d,i)=>{
+  data.forEach((d,i)=>{
     const cx = L + step*i + step/2;
-    add('rect',{x:cx-bw/2, y:y(d.universe_bull), width:bw,
-                height:Math.max(1,ih-(y(d.universe_bull)-T)), fill:'var(--bull)', opacity:.82})
-      .appendChild(Object.assign(document.createElementNS(SVGNS,'title'),
-        {textContent:`${d.week_ending}: ${d.universe_bull} of ${d.stocks_covered} (${d.bull_pct}%)`}));
-    add('text',{x:cx, y:y(d.universe_bull)-7,'text-anchor':'middle','font-size':11,
-                'font-weight':600, fill:'var(--ink)','font-family':"'IBM Plex Mono',monospace"},
-        d.universe_bull);
-    const lbl = d.week_ending.slice(5).replace('-','/');
-    add('text',{x:cx, y:H-B+18,'text-anchor':'middle','font-size':10.5, fill:'var(--ink-soft)',
-                'font-family':"'IBM Plex Mono',monospace"}, lbl);
+    const bar = add('rect',{x:cx-bw/2, y:y(d.universe_bull), width:bw,
+                height:Math.max(1,ih-(y(d.universe_bull)-T)), fill:'var(--bull)', opacity:.82});
+    tip(bar, `${d.week_ending}\n${d.universe_bull} bull gaps of ${d.stocks_covered} scanned `
+           + `(${d.bull_pct}%)\n${d.screened_bull} also passed the screen`);
+    if(showValues){
+      add('text',{x:cx, y:y(d.universe_bull)-7,'text-anchor':'middle','font-size':11,
+                  'font-weight':600, fill:'var(--ink)','font-family':"'IBM Plex Mono',monospace"},
+          d.universe_bull);
+    }
+    if(i % labelEvery === 0 || i === n-1){
+      add('text',{x:cx, y:H-B+18,'text-anchor':'middle','font-size':10.5, fill:'var(--ink-soft)',
+                  'font-family':"'IBM Plex Mono',monospace"},
+          n > 30 ? d.week_ending.slice(2,7) : d.week_ending.slice(5).replace('-','/'));
+    }
   });
 
-  // screened series as an overlay line
-  const pts = history.map((d,i)=>[L+step*i+step/2, y(d.screened_bull)]);
-  add('polyline',{points:pts.map(p=>p.join(',')).join(' '), fill:'none',
+  const pts = data.map((d,i)=>[L+step*i+step/2, y(d.screened_bull)]);
+  add('polyline',{points:pts.map(p=>p.join(' ')).join(' '), fill:'none',
                   stroke:'var(--plot)','stroke-width':2,
                   'stroke-linejoin':'round','stroke-linecap':'round'});
-  pts.forEach((p,i)=>{
-    add('circle',{cx:p[0],cy:p[1],r:3.4,fill:'var(--panel)',stroke:'var(--plot)','stroke-width':2})
-      .appendChild(Object.assign(document.createElementNS(SVGNS,'title'),
-        {textContent:`${history[i].week_ending}: ${history[i].screened_bull} passed the screen`}));
-  });
+  if(n <= 40){
+    pts.forEach((pt,i)=>{
+      tip(add('circle',{cx:pt[0],cy:pt[1],r:3.4,fill:'var(--panel)',
+                        stroke:'var(--plot)','stroke-width':2}),
+          `${data[i].week_ending}: ${data[i].screened_bull} passed the screen`);
+    });
+  }
 
-  add('line',{x1:L,x2:W-R,y1:T+ih,y2:T+ih,stroke:'var(--ink)','stroke-width':1.4});
+  add('line',{x1:L,x2:W-R,y1:T+ih,y2:T+ih,stroke:'var(--ink-faint)','stroke-width':1.2});
   host.appendChild(svg);
 
-  const first=history[0], last=history[history.length-1];
+  const first=data[0], last=data[n-1];
   const delta = last.universe_bull - first.universe_bull;
   const dir = delta>0 ? 'expanding' : delta<0 ? 'contracting' : 'flat';
+  const peak = data.reduce((a,b)=>b.universe_bull>a.universe_bull?b:a);
+  const avg = Math.round(data.reduce((t,d)=>t+d.universe_bull,0)/n);
+  const atLatest = state.endIdx === state.history.length-1;
   $('trendnote').textContent =
-    `${history.length} weeks to ${last.week_ending}. Bull gaps went from ${first.universe_bull} `
-    + `to ${last.universe_bull} — ${dir}. Counts are rebuilt from price history each run, so cap `
-    + `and ADR% are as of today rather than point-in-time.`;
+    `${n} week${n===1?'':'s'}, ${first.week_ending} to ${last.week_ending}`
+    + `${atLatest ? '' : ' (scrolled back — press Latest to return)'}. `
+    + `Bull gaps went ${first.universe_bull} to ${last.universe_bull} — ${dir}. `
+    + `Peak ${peak.universe_bull} on ${peak.week_ending}; average ${avg}. `
+    + `Hover any bar for that week's exact count.`;
+}
+
+function fillEndWeek(){
+  const sel = $('endweek');
+  sel.innerHTML = state.history.map((d,i)=>
+    `<option value="${i}">${d.week_ending}</option>`).join('');
+  sel.value = String(state.endIdx);
 }
 
 /* ---------- industry concentration ---------- */
@@ -481,6 +538,8 @@ function downloadCSV(){
 /* ---------- boot ---------- */
 function boot(snapshot, history){
   state.rows = snapshot.results || [];
+  state.history = history || [];
+  state.endIdx = Math.max(0, state.history.length - 1);
   state.week = snapshot.week_ending;
 
   const stamp = new Date(snapshot.generated_at);
@@ -495,7 +554,8 @@ function boot(snapshot, history){
     <div class="stat"><div class="k">Within 10% of a high</div><div class="v">${near}</div></div>
     <div class="stat"><div class="k">Universe scanned</div><div class="v">${snapshot.universe_size.toLocaleString()}</div></div>`;
 
-  drawTrend(history);
+  fillEndWeek();
+  drawTrend();
   drawConcentration(state.rows);
 
   const inds = [...new Set(state.rows.map(r=>r.industry))].sort();
@@ -503,6 +563,20 @@ function boot(snapshot, history){
     + inds.map(i=>`<option value="${i}">${i}</option>`).join('');
 
   renderHead(); renderRows();
+
+  $('rangeseg').addEventListener('click', e=>{
+    const b = e.target.closest('button'); if(!b) return;
+    state.weeks = Number(b.dataset.weeks);
+    $('rangeseg').querySelectorAll('button').forEach(x=>
+      x.setAttribute('aria-pressed', String(x===b)));
+    drawTrend();
+  });
+  $('endweek').addEventListener('change', e=>{
+    state.endIdx = Number(e.target.value); drawTrend();
+  });
+  $('latest').addEventListener('click', ()=>{
+    state.endIdx = state.history.length-1; $('endweek').value=String(state.endIdx); drawTrend();
+  });
 
   $('gapseg').addEventListener('click', e=>{
     const b = e.target.closest('button'); if(!b) return;
